@@ -1,0 +1,56 @@
+.categoria {
+    margin-bottom: 50px;
+}
+
+.carrosselWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.listaFilmes {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    scrollbar-width: thin;
+}
+
+.listaFilmes::-webkit-scrollbar {
+    height: 8px;
+}
+
+.listaFilmes::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 10px;
+}
+
+.navButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    color: #007acc;
+    border: 3px solid #000;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: background 0.3s;
+    z-index: 1;
+}
+
+.navButton:hover {
+    background: #007acc;
+    color: white;
+}
+
+.navButton.left {
+    left: -10px;
+    z-index: 5;
+}
+
+.navButton.right {
+    right: -10px;
+}
